@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>工程经济学知识站</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 数学公式渲染 -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <header>
+        <h1>工程经济学 知识汇总站</h1>
+        <p>公式 · 知识点 · 例题 · 笔记</p>
+    </header>
+
+    <nav>
+        <a href="#base">资金时间价值</a>
+        <a href="#rate">利率与复利</a>
+        <a href="#npv">现值与年金</a>
+        <a href="#dep">折旧与设备更新</a>
+    </nav>
+
+    <main>
+        <section id="base">
+            <h2>一、资金时间价值基础</h2>
+            <p>核心逻辑：同样金额的资金，现在的价值大于未来。</p>
+            <div class="formula">
+                单利公式：\[ F = P(1 + ni) \]
+            </div>
+            <div class="formula">
+                复利公式：\[ F = P(1 + i)^n \]
+            </div>
+        </section>
+
+        <section id="rate">
+            <h2>二、名义利率 & 有效利率</h2>
+            <div class="formula">
+                离散复利有效利率：\[ i_{eff} = \left(1+\frac{r}{m}\right)^m - 1 \]
+            </div>
+            <div class="formula">
+                连续复利：\[ i_{eff} = e^r - 1 \]
+            </div>
+            <p>r：名义年利率，m：一年计息次数</p>
+        </section>
+
+        <section id="npv">
+            <h2>三、现值、年金、净现值</h2>
+            <div class="formula">
+                一次支付现值：\[ P = F(1+i)^{-n} \]
+            </div>
+            <div class="formula">
+                等额年金现值：\[ P = A\cdot \frac{(1+i)^n-1}{i(1+i)^n} \]
+            </div>
+            <div class="formula">
+                净现值NPV：\[ NPV = \sum_{t=0}^{n} \frac{CF_t}{(1+i)^t} \]
+            </div>
+        </section>
+
+        <section id="dep">
+            <h2>四、折旧与设备更新</h2>
+            <ul>
+                <li>直线折旧法</li>
+                <li>年数总和法</li>
+                <li>双倍余额递减法</li>
+            </ul>
+            <p>可自行在这里补充公式和例题</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>工程经济学学习网站 | 所有人均可访问</p>
+    </footer>
+</body>
+</html>
